@@ -1,0 +1,10 @@
+.headerText {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.cast {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5rem;
+}

@@ -1,0 +1,29 @@
+.actor {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.actor:hover {
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-0.5rem);
+}
+
+.actor img {
+  width: 100%;
+}
+
+.details {
+  padding: 1rem;
+}
+
+.name {
+  color: #212529;
+  font-size: 1.6rem;
+}
+
+.character {
+  color: #6f6f6f;
+  font-weight: 400;
+  font-size: 1.2rem;
+}

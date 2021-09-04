@@ -1,0 +1,16 @@
+.dl {
+  color: #212529;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  padding: 3rem;
+  box-shadow: 0 0rem 4.8rem rgba(0, 0, 0, 0.075);
+  margin-top: 8.6rem;
+}
+
+.dl dt {
+  font-weight: 600;
+}
+
+.dl dd {
+  margin-bottom: 2rem;
+}

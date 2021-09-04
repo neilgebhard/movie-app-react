@@ -64,38 +64,17 @@ Medium: 11px
   box-sizing: border-box;
 }
 
-body {
-  font-family: sans-serif;
-  background-color: #f8f9fa;
-}
-
 html {
   font-size: 62.5%;
   color: #212529;
 }
 
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f8f9fa;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-section {
-  font-size: 2rem;
-}
-
-h1, h2, h3 {
-  margin-bottom: 2rem;
-}
-
-a:link,
-a:visited {
-  text-decoration: none;
-  color: #1d5a82;
-  font-weight: bold;
-  transition: .3s;
-}
-
-a:hover,
-a:active {
-  color: #15405d;
 }

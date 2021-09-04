@@ -1,0 +1,69 @@
+.flex {
+  display: flex;
+  gap: 2rem;
+}
+
+.hero {
+  background-size: cover;
+  position: relative;
+  height: 60rem;
+  color: #fff;
+  padding: 3rem;
+  margin-bottom: 3rem;
+}
+
+.posterImg {
+  height: 54rem;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+.facts {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.facts span {
+  margin-right: 2rem;
+}
+
+.releaseYear {
+  color: #bfd9ea;
+  font-weight: 400;
+  margin-left: 1rem;
+}
+
+.details {
+  font-size: 2rem;
+}
+
+.tagline {
+  color: #bfd9ea;
+  font-style: italic;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.overviewLabel {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.overview {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.rating {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.imdbImg {
+  height: 2rem;
+}
