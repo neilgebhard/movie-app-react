@@ -1,20 +1,5 @@
-.movie {
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-  border-radius: 5px;
-  transition: 0.3s;
-}
-
-.movie:hover {
-  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.15);
-  transform: translateY(-0.5rem);
-}
-
-.movie img {
-  width: 100%;
-}
-
 .details {
-  padding: 10px;
+  padding: 1rem;
 }
 
 .rating {
@@ -29,15 +14,4 @@
 .title {
   font-size: 1.6rem;
   font-weight: 400;
-}
-
-a:link,
-a:visited {
-  text-decoration: none;
-  color: #212529;
-}
-
-a:hover,
-a:active {
-  color: #1d5a82;
 }

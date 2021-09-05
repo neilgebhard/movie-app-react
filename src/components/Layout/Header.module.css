@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
-  padding: 2rem;
+  padding: 0.5rem 2rem;
   font-size: 2rem;
 }
 
@@ -13,18 +13,7 @@
   gap: 1.5rem;
 }
 
-.header a:link,
-.header a:visited {
-  text-decoration: none;
-  color: #1d5a82;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.header a:hover,
-.header a:active {
-  color: #15405d;
-}
-
-.searchInput {
+.logo {
+  display: inline-block;
+  align-items: center;
 }

@@ -26,17 +26,17 @@ const MoviePage = () => {
   }, [movieId]);
 
   return (
-    <main>
-      <MovieHeader movie={movie} />
-      <section className="container">
+    <>
+      {movie && <MovieHeader movie={movie} />}
+      {movie && <section className="container">
         <Cast movieId={movieId} />
         <Similar movieId={movieId} />
-        <div className={styles.flex}>
+        <div className={styles.wrapper}>
           <ReviewList movieId={movieId} />
           <Details movie={movie} />
         </div>
-      </section>
-    </main>
+      </section>}
+    </>
   );
 };
 

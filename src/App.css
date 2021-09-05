@@ -1,27 +1,9 @@
-/*
---- 01 TYPOGRAPHY SYSTEM
-
-- Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
+/* 
 - Font weights
 Default: 400
 Medium: 500
 Semi-bold: 600
 Bold: 700
-
-- Line heights
-Default: 1
-Small: 1.05
-Medium: 1.2
-Paragraph default: 1.6
-Large: 1.8
-
-- Letter spacing
--0.5px
-0.75px
-
---- 02 COLORS
 
 - Primary: #1d5a82
 - Tints:
@@ -42,21 +24,13 @@ Large: 1.8
 #555
 #333
 
---- 05 SHADOWS
+--- SHADOWS
 
-cards
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+card - box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
---- 06 BORDER-RADIUS
+--- BORDER-RADIUS
 
-Default: 9px
-Medium: 11px
-
---- 07 WHITESPACE
-
-- Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-*/
+Default: 10px */
 
 * {
   margin: 0;
@@ -77,4 +51,87 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+
+  color: #15405d;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+a:hover,
+a:active {
+  color: #1d5a82;
+}
+
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  html {
+    font-size: 37.5%;
+  }
 }

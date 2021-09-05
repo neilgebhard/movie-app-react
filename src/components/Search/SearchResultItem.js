@@ -13,7 +13,7 @@ const SearchResultItem = ({ movie }) => {
 
   return (
     <li className={styles.movie}>
-      <Link to={`/movie/${id}`} className={styles.flex}>
+      <Link to={`/movie/${id}`} className={styles.link}>
         <img src={poster} alt="Poster" />
         <div className={styles.details}>
           <p className={styles.title}>{title}</p>

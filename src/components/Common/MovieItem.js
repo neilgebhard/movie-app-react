@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Card from "../UI/Card";
 import styles from "./MovieItem.module.css";
 import StarIcon from "../../assets/StarIcon";
 
@@ -7,7 +8,7 @@ const Movie = ({ movie }) => {
   const poster = `https://image.tmdb.org/t/p/w500/${poster_path}`;
 
   return (
-    <li className={styles.movie}>
+    <Card>
       <Link to={`/movie/${id}`}>
         <img src={poster} alt="Poster" />
         <div className={styles.details}>
@@ -17,7 +18,7 @@ const Movie = ({ movie }) => {
           <p className={styles.title}>{title}</p>
         </div>
       </Link>
-    </li>
+    </Card>
   );
 };
 

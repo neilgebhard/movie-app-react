@@ -32,7 +32,7 @@ const MovieHeader = ({ movie }) => {
         backgroundImage: `linear-gradient(rgba(34, 34, 34, 0.93), rgba(34, 34, 34, 0.93)), url(${bgImageSrc})`,
       }}
     >
-      <div className={`container ${styles.flex} ${styles.flexCenter}`}>
+      <div className={`container ${styles.wrapper}`}>
         <div className={styles.posterImgBox}>
           <img className={styles.posterImg} src={posterSrc} alt="Poster" />
         </div>

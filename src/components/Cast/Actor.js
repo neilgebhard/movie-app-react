@@ -1,3 +1,4 @@
+import Card from "../UI/Card";
 import styles from "./Actor.module.css";
 
 const Actor = ({ actor }) => {
@@ -5,13 +6,13 @@ const Actor = ({ actor }) => {
   const profilePic = `https://image.tmdb.org/t/p/w500/${profile_path}`;
 
   return (
-    <div className={styles.actor}>
+    <Card>
       <img src={profilePic} alt="Profile" />
       <div className={styles.details}>
         <p className={styles.name}>{name}</p>
         <p className={styles.character}>{character}</p>
       </div>
-    </div>
+    </Card>
   );
 };
 

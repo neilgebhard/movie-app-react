@@ -1,6 +1,0 @@
-.movieList {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 5rem;
-  list-style: none;
-}

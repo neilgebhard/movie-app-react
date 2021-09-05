@@ -5,6 +5,6 @@ import Footer from "./Footer";
 describe("Footer", () => {
   test("renders Footer component", () => {
     render(<Footer />);
-    expect(screen.getByText(/Neil's Movie App/)).toBeInTheDocument();
+    expect(screen.getByText(/Made with ❤️ by Neil Gebhard./)).toBeInTheDocument();
   });
 });

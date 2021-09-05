@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import styles from "./ReviewList.module.css";
 import axios from "axios";
 import Review from "./Review";
 
@@ -21,10 +20,10 @@ function Reviews({ movieId }) {
   }, [movieId]);
 
   return (
-    <section className={styles.section}>
+    <section>
       {reviews.length > 0 && (
         <div className="container">
-          <h2 className={styles.headerText}>Reviews</h2>
+          <h3>Reviews</h3>
           {reviews.map((review) => (
             <Review key={review.id} review={review} />
           ))}

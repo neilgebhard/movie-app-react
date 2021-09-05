@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import MovieList from "../Common/MovieList";
-import styles from "./Popular.module.css";
 import axios from "axios";
 
 const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
@@ -21,9 +20,9 @@ function Popular() {
   }, []);
 
   return (
-    <section className={styles.section}>
+    <section>
       <div className="container">
-        <h2 className={styles.headerText}>Popular</h2>
+        <h2>Popular</h2>
         <MovieList movies={movies} />
       </div>
     </section>

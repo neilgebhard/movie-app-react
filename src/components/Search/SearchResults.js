@@ -21,10 +21,6 @@ const SearchResults = () => {
           include_adult: false,
         },
       })
-      .then((res) => {
-        console.log(res);
-        return res;
-      })
       .then((res) => setMovies(res.data.results));
   }, [searchText]);
 
@@ -36,7 +32,7 @@ const SearchResults = () => {
     <section className={styles.section}>
       <ul className={styles.ul}>
         {movies.map((movie) => (
-          <SearchResultItem movie={movie} />
+          <SearchResultItem movie={movie} key={movie.id} />
         ))}
       </ul>
     </section>

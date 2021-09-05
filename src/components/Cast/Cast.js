@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Actor from "./Actor";
-import styles from "./Cast.module.css";
+import SideScroll from "../UI/SideScroll";
 
 const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
 
@@ -16,17 +16,17 @@ const Cast = ({ movieId }) => {
           api_key: API_KEY,
         },
       })
-      .then((res) => setCast(res.data.cast.slice(0, 6)));
+      .then((res) => setCast(res.data.cast.slice(0, 20)));
   }, [movieId]);
 
   return (
     <>
-      <h1 className={styles.headerText}>Cast</h1>
-      <div className={styles.cast}>
+      <h1>Cast</h1>
+      <SideScroll>
         {cast.map((actor) => (
           <Actor key={actor.id} actor={actor} />
         ))}
-      </div>
+      </SideScroll>
     </>
   );
 };

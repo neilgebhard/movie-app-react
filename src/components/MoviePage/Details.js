@@ -18,6 +18,7 @@ const Details = ({ movie }) => {
 
   return (
     <div>
+      <h3>Details</h3>
       <dl className={styles.dl}>
         <dt>Released</dt>
         <dd>{release_date}</dd>

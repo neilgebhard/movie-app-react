@@ -4,11 +4,8 @@ import GithubIcon from "../../assets/GithubIcon";
 const Footer = () => {
   return (
     <section className={styles.footer}>
-      <div className={`container ${styles.flex}`}>
-        <h3 className={styles.title}>Neil's Movie App</h3>
-        <a href="https://github.com/neilgebhard/movie-app-react">
-          <GithubIcon />
-        </a>
+      <div className="container">
+        <div>Made with ❤️ by Neil Gebhard. The code is on <a href="https://github.com/neilgebhard/movie-app-react">Github <GithubIcon height="20" /></a>.</div>
       </div>
     </section>
   );

@@ -1,0 +1,16 @@
+.card {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  transition: 0.3s;
+  width: 17.5rem;
+  flex-shrink: 0;
+  border: 1px solid #EEE;
+}
+
+.card:hover {
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-0.5rem);
+}
+
+.card img {
+  width: 100%;
+}

@@ -1,13 +1,13 @@
 import Movie from "./MovieItem";
-import styles from "./MovieList.module.css";
+import SideScroll from "../UI/SideScroll";
 
 const MovieList = ({ movies }) => {
   return (
-    <ul className={styles.movieList}>
+    <SideScroll>
       {movies.map((movie) => (
         <Movie key={movie.id} movie={movie} />
       ))}
-    </ul>
+    </SideScroll>
   );
 };
 
