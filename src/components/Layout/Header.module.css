@@ -17,3 +17,13 @@
   display: inline-block;
   align-items: center;
 }
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .logo {
+    display: none;
+  }
+}

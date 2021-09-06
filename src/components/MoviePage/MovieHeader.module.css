@@ -1,8 +1,3 @@
-.wrapper {
-  display: flex;
-  gap: 2rem;
-}
-
 .hero {
   background-size: cover;
   position: relative;
@@ -10,6 +5,11 @@
   color: #fff;
   padding: 3rem;
   margin-bottom: 3rem;
+}
+
+.wrapper {
+  display: flex;
+  gap: 2rem;
 }
 
 .posterImg {
@@ -66,4 +66,24 @@
 
 .imdbImg {
   height: 2rem;
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .posterImg {
+    height: 43rem;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .posterImg {
+    display: none;
+  }
 }

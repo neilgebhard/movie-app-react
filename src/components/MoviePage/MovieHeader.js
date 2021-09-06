@@ -1,7 +1,7 @@
+import { getReleaseYear, getReleaseDate, getRuntimes } from "../util";
 import styles from "./MovieHeader.module.css";
 import StarIcon from "../../assets/StarIcon";
 import imdbImg from "../../assets/imdb.png";
-import { getReleaseYear, getReleaseDate, getRuntimes } from "../util";
 
 const MovieHeader = ({ movie }) => {
   const {

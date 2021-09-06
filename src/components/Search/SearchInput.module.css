@@ -18,3 +18,13 @@
   background-color: white;
   border-radius: 10px;
 }
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  form, .search {
+    width: 100%;
+  }
+}

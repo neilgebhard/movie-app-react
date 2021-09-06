@@ -28,14 +28,16 @@ const MoviePage = () => {
   return (
     <>
       {movie && <MovieHeader movie={movie} />}
-      {movie && <section className="container">
-        <Cast movieId={movieId} />
-        <Similar movieId={movieId} />
-        <div className={styles.wrapper}>
-          <ReviewList movieId={movieId} />
-          <Details movie={movie} />
-        </div>
-      </section>}
+      {movie && (
+        <section className="container">
+          <Cast movieId={movieId} />
+          <Similar movieId={movieId} />
+          <div className={styles.wrapper}>
+            <ReviewList movieId={movieId} />
+            <Details movie={movie} />
+          </div>
+        </section>
+      )}
     </>
   );
 };
