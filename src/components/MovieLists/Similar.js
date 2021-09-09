@@ -21,10 +21,8 @@ const Similar = ({ movieId }) => {
 
   return (
     <section>
-      <div className="container">
-        <h2>Similar Movies</h2>
-        <MovieList movies={movies} />
-      </div>
+      <h2>Similar Movies</h2>
+      <MovieList movies={movies} />
     </section>
   );
 };

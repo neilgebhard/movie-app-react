@@ -21,10 +21,8 @@ function NowPlaying() {
 
   return (
     <section>
-      <div className="container">
-        <h2>Now Playing</h2>
-        <MovieList movies={movies} />
-      </div>
+      <h2>Now Playing</h2>
+      <MovieList movies={movies} />
     </section>
   );
 }

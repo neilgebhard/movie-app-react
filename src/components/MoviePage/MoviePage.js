@@ -5,6 +5,7 @@ import Cast from "../Cast/Cast";
 import Similar from "../MovieLists/Similar";
 import ReviewList from "../Reviews/ReviewList";
 import Details from "./Details";
+import LoadingSpinner from "../UI/LoadingSpinner";
 import styles from "./MoviePage.module.css";
 import axios from "axios";
 
@@ -22,22 +23,22 @@ const MoviePage = () => {
           api_key: API_KEY,
         },
       })
-      .then((res) => setMovie(res.data));
+      .then((res) => setMovie(res.data))
   }, [movieId]);
+
+  if (Object.keys(movie).length === 0) return <LoadingSpinner />
 
   return (
     <>
-      {movie && <MovieHeader movie={movie} />}
-      {movie && (
-        <section className="container">
-          <Cast movieId={movieId} />
-          <Similar movieId={movieId} />
-          <div className={styles.wrapper}>
-            <ReviewList movieId={movieId} />
-            <Details movie={movie} />
-          </div>
-        </section>
-      )}
+      <MovieHeader movie={movie} />
+      <section className="container">
+        <Cast movieId={movieId} />
+        <Similar movieId={movieId} />
+        <div className={styles.wrapper}>
+          <ReviewList movieId={movieId} />
+          <Details movie={movie} />
+        </div>
+      </section>
     </>
   );
 };

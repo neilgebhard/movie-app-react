@@ -19,10 +19,8 @@ const Trending = () => {
 
   return (
     <section>
-      <div className="container">
-        <h2>Trending</h2>
-        <MovieList movies={movies} />
-      </div>
+      <h2>Trending</h2>
+      <MovieList movies={movies} />
     </section>
   );
 };

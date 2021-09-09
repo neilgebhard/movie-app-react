@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <section className={styles.hero}>MOVIES</section>
-      <main className={styles.main}>
+      <main className={`container ${styles.main}`}>
         <Popular />
         <Trending />
         <NowPlaying />

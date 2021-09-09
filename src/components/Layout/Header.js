@@ -6,13 +6,9 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <a href="/" className={styles.logo}>
-        <CameraIcon />
-        &nbsp; Neil's Movie App
+        <CameraIcon />&nbsp;&nbsp;Neil's Movie App
       </a>
       <SearchInput />
-      <nav>
-        <ul>{/* <li>Link</li> */}</ul>
-      </nav>
     </header>
   );
 };

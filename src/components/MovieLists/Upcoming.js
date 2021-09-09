@@ -21,10 +21,8 @@ function Upcoming() {
 
   return (
     <section>
-      <div className="container">
-        <h2>Upcoming</h2>
-        <MovieList movies={movies} />
-      </div>
+      <h2>Upcoming</h2>
+      <MovieList movies={movies} />
     </section>
   );
 }
