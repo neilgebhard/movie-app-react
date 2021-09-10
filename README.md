@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). The API used is [The Movie Database API](https://developers.themoviedb.org/3/getting-started/introduction). All the JavaScript, HTML, and CSS were written from scratch. The project is deployed on [Netlify](https://www.netlify.com/). 😊
 
 ## Available Scripts
 
