@@ -14,7 +14,7 @@
 }
 
 .logo {
-  display: inline-block;
+  display: flex;
   align-items: center;
 }
 
@@ -23,7 +23,7 @@
 /**************************/
 
 @media (max-width: 34em) {
-  .logo {
+  .logo span {
     display: none;
   }
 }
