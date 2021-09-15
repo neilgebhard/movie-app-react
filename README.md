@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c708f686-0648-467d-8254-ffbdb9387d48/deploy-status)](https://app.netlify.com/sites/neilsmovieapp/deploys)
+
 # Portfolio Project - Movie Web App
 
 This project holds the source code for a movie web app built with [Create React App](https://github.com/facebook/create-react-app) and the [The Movie Database API](https://developers.themoviedb.org/3/getting-started/introduction). The project is deployed on [Netlify](https://neilsmovieapp.netlify.com/). 

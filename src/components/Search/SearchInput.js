@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { useHistory } from "react-router";
 import styles from "./SearchInput.module.css";
 
-const SearchInput = () => {
+const SearchInput = (props) => {
   const inputEl = useRef();
   let history = useHistory();
 
@@ -14,7 +14,7 @@ const SearchInput = () => {
   };
 
   return (
-    <form onSubmit={onSubmitHandler}>
+    <form className={styles.form} onSubmit={onSubmitHandler}>
       <input
         className={styles.search}
         placeholder="Search for a movie"
