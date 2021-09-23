@@ -8,7 +8,7 @@ import styles from "./Home.module.css";
 const Home = () => {
   return (
     <>
-      <section className={styles.hero}>MOVIES</section>
+      {/* <section className={styles.hero}>MOVIES</section> */}
       <main className={`container ${styles.main}`}>
         <Popular />
         <Trending />

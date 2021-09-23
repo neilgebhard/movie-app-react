@@ -5,10 +5,9 @@ import Header from "./components/Layout/Header";
 import Footer from "./components/Layout/Footer";
 import LoadingSpinner from "./components/UI/LoadingSpinner";
 import "./App.css";
-
-const HomePage = React.lazy(() => import("./components/Home"));
-const MoviePage = React.lazy(() => import("./components/MoviePage/MoviePage"));
-const SearchResults = React.lazy(() => import("./components/Search/SearchResults"));
+import HomePage from "./components/Home";
+import MoviePage from "./components/MoviePage/MoviePage";
+import SearchResults from "./components/Search/SearchResults";
 
 function App() {
   return (

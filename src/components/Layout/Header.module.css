@@ -1,11 +1,10 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background-color: #fff;
   padding: 0.5rem 2rem;
-  font-size: 2rem;
-  gap: 5rem;
+  font-size: 3rem;
+  gap: 1rem;
 }
 
 .header ul {
