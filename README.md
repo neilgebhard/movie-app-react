@@ -1,29 +1,35 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c708f686-0648-467d-8254-ffbdb9387d48/deploy-status)](https://app.netlify.com/sites/neilsmovieapp/deploys)
 
-# Portfolio Project - Movie Web App
+## Movie web app
 
-This project holds the source code for a movie web app built with [Create React App](https://github.com/facebook/create-react-app) and the [The Movie Database API](https://developers.themoviedb.org/3/getting-started/introduction). The project is deployed on [Netlify](https://neilsmovieapp.netlify.com/). 
+- [General info](#general-info)
+- [Technologies](#technologies)
+- [Setup](#setup)
 
-The features used in this app are:
+## General info
 
-- [Display lists of movies](https://neilsmovieapp.netlify.app/) (Popular, Trending, etc.)
+This repository holds the source code for a movie web app that can display lists of movies, details of a movie, and has search.
 
-![](home.gif)
+## Technologies
 
-- [Display a movie](https://neilsmovieapp.netlify.app/movie/436969) such as movie details, the cast, similar movies, and reviews
+Project is created with:
 
-![](movie.gif)
+- [The Movie Database API](https://developers.themoviedb.org/3/getting-started/introduction)
+- React: 17.0.2
+- React Router: 5.2.0
 
-- [Search](https://neilsmovieapp.netlify.app/search/marvel) for movies
+## Setup
 
-![](search.gif)
+To run this project, you'll need to create a .env file at the root of the project and set the variable REACT_APP_TMDB_API_KEY to your TMDB api key. Install it locally using npm:
 
-The app is completely single-page and respsonsive. CSS modules are leveraged to conduct styling. Many components are reusable.
+```
+$ cd ./movie-app-react
+$ npm install
+$ npm start
+```
 
-Some features I would add in the future are:
+## Demo
 
-- more robust testing
-- authentication for rating movies and writing reviews
-- TV Shows
+The live demo is deployed on Netlify: https://neilsmovieapp.netlify.com/
 
-😊
+![Homepage screenshot](screenshot.png)

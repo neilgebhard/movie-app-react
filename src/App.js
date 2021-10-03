@@ -5,9 +5,9 @@ import Header from "./components/Layout/Header";
 import Footer from "./components/Layout/Footer";
 import LoadingSpinner from "./components/UI/LoadingSpinner";
 import "./App.css";
-import HomePage from "./components/Home";
-import MoviePage from "./components/MoviePage/MoviePage";
-import SearchResults from "./components/Search/SearchResults";
+import HomePage from "./components/Pages/Home";
+import MoviePage from "./components/Pages/Movie";
+import SearchResults from "./components/Pages/Search";
 
 function App() {
   return (
