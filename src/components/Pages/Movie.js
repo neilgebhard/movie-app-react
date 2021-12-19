@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import MovieHeader from "../MoviePage/MovieHeader";
 import Cast from "../Cast/Cast";
-import Similar from "../MovieLists/Similar";
+import MovieList from "../Common/MovieList";
 import ReviewList from "../Reviews/ReviewList";
 import Details from "../MoviePage/Details";
 import LoadingSpinner from "../UI/LoadingSpinner";
@@ -23,17 +23,20 @@ const MoviePage = () => {
           api_key: API_KEY,
         },
       })
-      .then((res) => setMovie(res.data))
+      .then((res) => setMovie(res.data));
   }, [movieId]);
 
-  if (Object.keys(movie).length === 0) return <LoadingSpinner />
+  if (Object.keys(movie).length === 0) return <LoadingSpinner />;
 
   return (
     <>
       <MovieHeader movie={movie} />
       <section className="container">
         <Cast movieId={movieId} />
-        <Similar movieId={movieId} />
+        <MovieList
+          endpoint={`https://api.themoviedb.org/3/movie/${movieId}/similar`}
+          title="Similar Movies"
+        />
         <div className={styles.wrapper}>
           <ReviewList movieId={movieId} />
           <Details movie={movie} />

@@ -1,3 +1,4 @@
+import ShowMoreText from "react-show-more-text";
 import styles from "./Review.module.css";
 
 const Review = ({ review }) => {
@@ -11,13 +12,20 @@ const Review = ({ review }) => {
 
   return (
     <div className={styles.review}>
-      <p className={styles.reviewText}>{content}</p>
-      <div className={styles.author}>
-        <strong>{author}</strong>
-        <div className={styles.date}>
-          {month}/{day}/{year}
-        </div>
-      </div>
+      <strong>{author}</strong>
+      <p className={styles.date}>
+        {month}/{day}/{year}
+      </p>
+      <ShowMoreText
+        lines={3}
+        more="Read more"
+        less="Show less"
+        expanded={false}
+        anchorClass={styles.link}
+        truncatedEndingComponent={"... "}
+      >
+        <p style={{ whiteSpace: "pre-line" }}>{content}</p>
+      </ShowMoreText>
     </div>
   );
 };

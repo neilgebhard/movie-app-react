@@ -1,9 +1,11 @@
 .dl {
   color: #212529;
   font-size: 1.6rem;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   padding: 3rem;
-  box-shadow: 0 0rem 4.8rem rgba(0, 0, 0, 0.075);
+  box-shadow: var(--shadow);
+  background-color: white;
+  border: 1px solid var(--color-border);
 }
 
 .dl dt {

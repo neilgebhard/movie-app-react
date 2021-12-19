@@ -2,7 +2,7 @@
   background-size: cover;
   position: relative;
   height: 60rem;
-  color: #fff;
+  color: white;
   padding: 3rem;
   margin-bottom: 3rem;
 }
@@ -21,6 +21,18 @@
   font-size: 5rem;
 }
 
+@media (max-width: 1024px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
 .facts {
   font-size: 1.4rem;
   margin-bottom: 2rem;
@@ -31,7 +43,7 @@
 }
 
 .releaseYear {
-  color: #bfd9ea;
+  color: var(--text-color-gray);
   font-weight: 400;
   margin-left: 1rem;
 }
@@ -41,7 +53,7 @@
 }
 
 .tagline {
-  color: #bfd9ea;
+  color: var(--text-color-gray);
   font-style: italic;
   font-size: 1.4rem;
   margin-bottom: 2rem;

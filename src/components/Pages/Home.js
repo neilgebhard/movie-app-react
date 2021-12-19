@@ -1,18 +1,35 @@
-import Popular from "../MovieLists/Popular";
-import Trending from "../MovieLists/Trending";
-import NowPlaying from "../MovieLists/NowPlaying";
-import Upcoming from "../MovieLists/Upcoming";
-import TopRated from "../MovieLists/TopRated";
 import styles from "./Home.module.css";
+import MovieList from "../Common/MovieList";
+
+const movieLists = [
+  {
+    title: "Popular",
+    endpoint: "https://api.themoviedb.org/3/movie/popular",
+  },
+  {
+    title: "Trending",
+    endpoint: "https://api.themoviedb.org/3/trending/movie/week",
+  },
+  {
+    title: "Now Playing",
+    endpoint: "https://api.themoviedb.org/3/movie/now_playing",
+  },
+  {
+    title: "Upcoming",
+    endpoint: "https://api.themoviedb.org/3/movie/upcoming",
+  },
+  {
+    title: "Top Rated",
+    endpoint: "https://api.themoviedb.org/3/movie/popular",
+  },
+];
 
 const Home = () => {
   return (
     <main className={`container ${styles.main}`}>
-      <Popular />
-      <Trending />
-      <NowPlaying />
-      <Upcoming />
-      <TopRated />
+      {movieLists.map((list) => (
+        <MovieList title={list.title} endpoint={list.endpoint} />
+      ))}
     </main>
   );
 };

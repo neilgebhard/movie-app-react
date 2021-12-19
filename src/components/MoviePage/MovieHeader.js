@@ -52,7 +52,7 @@ const MovieHeader = ({ movie }) => {
           <p className={styles.rating}>
             <StarIcon width={40} /> {vote_average}
           </p>
-          <a href={imdbUrl}>
+          <a href={imdbUrl} target="_blank" rel="noreferrer">
             <img className={styles.imdbImg} src={imdbImg} alt="imdb" />
           </a>
         </div>

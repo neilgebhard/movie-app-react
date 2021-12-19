@@ -6,11 +6,9 @@
 }
 
 .searchBox {
-  /* width: 100%; */
   width: 500px;
   display: flex;
 }
-
 .searchInput {
   width: 100%;
   padding: 10px;
@@ -23,7 +21,6 @@
 }
 .searchButton {
   text-align: center;
-  height: 51px;
   width: 40px;
   outline: none;
   cursor: pointer;
@@ -39,7 +36,7 @@
 /* BELOW 544px (Phones) */
 /**************************/
 
-@media (max-width: 40em) {
+@media (max-width: 768px) {
   .searchBox {
     width: 100%;
   }

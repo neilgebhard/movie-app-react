@@ -3,11 +3,20 @@ import GithubIcon from "../../assets/GithubIcon";
 
 const Footer = () => {
   return (
-    <section className={styles.footer}>
+    <footer className={styles.footer}>
       <div className="container">
-        <div>Made with ❤️ by Neil Gebhard. The code is on <a href="https://github.com/neilgebhard/movie-app-react">Github <GithubIcon height="20" /></a>.</div>
+        <p>
+          Made by <strong>Neil Gebhard</strong>.
+        </p>
+        <p>
+          The code is on{" "}
+          <a href="https://github.com/neilgebhard/movie-app-react">
+            Github <GithubIcon height="20" />
+          </a>
+          .
+        </p>
       </div>
-    </section>
+    </footer>
   );
 };
 

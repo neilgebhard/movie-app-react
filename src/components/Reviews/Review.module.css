@@ -1,11 +1,12 @@
 .review {
-  box-shadow: 0 0rem 4.8rem rgba(0, 0, 0, 0.075);
-  border-radius: 5px;
-  color: #212529;
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
   margin-bottom: 2rem;
   padding: 3rem;
   font-size: 1.6rem;
   line-height: 1.5;
+  background-color: white;
+  border: 1px solid var(--color-border);
 }
 
 .reviewText {
@@ -14,4 +15,9 @@
 
 .date {
   color: #6f6f6f;
+  margin-bottom: 2rem;
+}
+
+.link {
+  font-weight: 600;
 }

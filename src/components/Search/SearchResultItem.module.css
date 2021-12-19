@@ -1,17 +1,13 @@
-.link {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  color: #212529;
-}
-
 .movie {
-  min-height: 20rem;
+  height: 20rem;
+  max-width: 80rem;
   margin-bottom: 2rem;
   font-size: 1.4rem;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
 }
 
 .movie img {
@@ -22,17 +18,34 @@
   margin-bottom: 1rem;
 }
 
+.link:link,
+.link:visited {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: var(--text-color);
+}
+
 .details {
   padding: 1rem 1rem 1rem 0;
 }
 
 .title {
   font-size: 2.4rem;
-  font-weight: 600;
+  font-weight: 500;
+}
+
+.date {
+  color: var(--text-color-gray);
 }
 
 .overview {
   font-size: 1.4rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .rating {

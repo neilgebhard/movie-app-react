@@ -6,7 +6,8 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <a href="/" className={styles.logo}>
-        <CameraIcon />&nbsp;&nbsp;<span>Movies</span>
+        <CameraIcon />
+        &nbsp;&nbsp;<span>Movies</span>
       </a>
       <SearchInput />
     </header>

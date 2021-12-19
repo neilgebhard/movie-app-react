@@ -1,5 +1,5 @@
 .section {
-  width: 80rem;
+  max-width: 80rem;
   margin: 5rem auto 0;
 }
 

@@ -1,5 +1,6 @@
 .details {
-  padding: .5rem;
+  padding: 0.5rem;
+  color: var(--text-color);
 }
 
 .rating {

@@ -1,11 +1,11 @@
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import axios from "axios";
-import Popular from "./Popular";
+import MovieList from "./MovieList";
 
 jest.mock("axios");
 
-describe("Popular component", () => {
+describe("Movie List component", () => {
   test("fetches movies from an API and displays them", async () => {
     const movies = {
       data: {
@@ -53,7 +53,7 @@ describe("Popular component", () => {
 
     render(
       <BrowserRouter>
-        <Popular />
+        <MovieList />
       </BrowserRouter>
     );
 

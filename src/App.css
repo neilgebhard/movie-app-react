@@ -1,19 +1,9 @@
 /* 
-- Font weights
-Default: 400
-Medium: 500
-Semi-bold: 600
-Bold: 700
 
-- Primary: #1d5a82
 - Tints:
 #eaf2f8
 #bfd9ea
 #5499c7
-
-- Shades: 
-#15405d
-#0c2637
 
 - Accents:
 - Greys
@@ -23,14 +13,19 @@ Bold: 700
 #6f6f6f (lightest grey allowed on #fdf2e9)
 #555
 #333
+*/
 
---- SHADOWS
-
-card - box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-
---- BORDER-RADIUS
-
-Default: 10px */
+:root {
+  --text-color: #222;
+  --text-color-dark: #0c2637;
+  --text-color-gray: #888;
+  --color-primary: #1d5a82;
+  --color-primary-shade: #15405d;
+  --bg-color: #f8f9fa;
+  --border-radius: 10px;
+  --color-border: #eee;
+  --shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
 
 * {
   margin: 0;
@@ -40,18 +35,29 @@ Default: 10px */
 
 html {
   font-size: 62.5%;
-  color: #212529;
+  color: var(--text-color);
 }
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: #f8f9fa;
+  background-color: var(--bg-color);
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
 }
 
 h1,
@@ -65,7 +71,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 h3 {
@@ -75,64 +81,24 @@ h3 {
 a:link,
 a:visited {
   text-decoration: none;
-
-  color: #15405d;
-  font-weight: bold;
+  color: var(--color-primary-shade);
   transition: 0.3s;
 }
 
 a:hover,
 a:active {
-  color: #1d5a82;
+  color: var(--color-primary);
 }
 
-/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
-
-/**************************/
 /* BELOW 1344px (Smaller desktops) */
-/**************************/
 
 @media (max-width: 84em) {
 }
 
-/**************************/
-/* BELOW 1200px (Landscape Tablets) */
-/**************************/
-
-@media (max-width: 75em) {
-  html {
-    /* 9px / 16px  */
-    font-size: 56.25%;
-  }
-}
-
-/**************************/
-/* BELOW 944px (Tablets) */
-/**************************/
-
-@media (max-width: 59em) {
-  html {
-    /* 8px / 16px = 0.5 = 50% */
-    font-size: 50%;
-  }
-}
-
-/**************************/
 /* BELOW 704px (Smaller tablets) */
-/**************************/
 
 @media (max-width: 44em) {
   html {
-    font-size: 43.75%;
-  }
-}
-
-/**************************/
-/* BELOW 544px (Phones) */
-/**************************/
-
-@media (max-width: 34em) {
-  html {
-    font-size: 37.5%;
+    font-size: 50%%;
   }
 }

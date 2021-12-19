@@ -28,7 +28,9 @@ const Details = ({ movie }) => {
         <dd>{formatter.format(budget)}</dd>
         <dt>Homepage</dt>
         <dd>
-          <a href={homepage}>{homepage}</a>
+          <a href={homepage} target="_blank" rel="noreferrer">
+            {homepage}
+          </a>
         </dd>
         <dt>Original Language</dt>
         <dd>{original_language}</dd>
