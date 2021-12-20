@@ -22,12 +22,12 @@ function Reviews({ movieId }) {
   return (
     <section>
       {reviews.length > 0 && (
-        <div className="container">
+        <>
           <h3>Reviews</h3>
           {reviews.map((review) => (
             <Review key={review.id} review={review} />
           ))}
-        </div>
+        </>
       )}
     </section>
   );

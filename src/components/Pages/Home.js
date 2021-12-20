@@ -27,8 +27,10 @@ const movieLists = [
 const Home = () => {
   return (
     <main className={`container ${styles.main}`}>
-      {movieLists.map((list) => (
-        <MovieList title={list.title} endpoint={list.endpoint} />
+      {movieLists.map((list, i) => (
+        <div className="mb-10">
+          <MovieList title={list.title} endpoint={list.endpoint} key={i} />
+        </div>
       ))}
     </main>
   );

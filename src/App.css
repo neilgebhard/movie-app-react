@@ -90,12 +90,9 @@ a:active {
   color: var(--color-primary);
 }
 
-/* BELOW 1344px (Smaller desktops) */
-
-@media (max-width: 84em) {
+.mb-10 {
+  margin-bottom: 10rem;
 }
-
-/* BELOW 704px (Smaller tablets) */
 
 @media (max-width: 44em) {
   html {
