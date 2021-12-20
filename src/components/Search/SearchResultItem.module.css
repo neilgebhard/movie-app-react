@@ -14,15 +14,28 @@
   height: 20rem;
 }
 
+@media (max-width: 40em) {
+  .movie {
+    border-radius: 0;
+  }
+
+  .movie img {
+    height: 10rem;
+  }
+}
+
 .movie p {
   margin-bottom: 1rem;
 }
 
+.link {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
 .link:link,
 .link:visited {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
   color: var(--text-color);
 }
 

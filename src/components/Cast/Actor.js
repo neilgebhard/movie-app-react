@@ -7,7 +7,10 @@ const Actor = ({ actor }) => {
   const path = `https://image.tmdb.org/t/p/w500/${profile_path}`;
   return (
     <Card>
-      <Img src={[path, "https://via.placeholder.com/500x750?text=Actor"]} />
+      <Img
+        src={[path, "https://via.placeholder.com/500x750?text=Actor"]}
+        alt={`Portrait of ${name}`}
+      />
       <div className={styles.details}>
         <p className={styles.name}>{name}</p>
         <p className={styles.character}>{character}</p>

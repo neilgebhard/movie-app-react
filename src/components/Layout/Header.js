@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <a href="/" className={styles.logo}>
-        <CameraIcon />
+        <CameraIcon aria-label="Logo" />
         &nbsp;&nbsp;<span>Movies</span>
       </a>
       <SearchInput />

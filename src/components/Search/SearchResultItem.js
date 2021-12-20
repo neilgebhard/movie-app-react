@@ -13,7 +13,10 @@ const SearchResultItem = ({ movie }) => {
   return (
     <li className={styles.movie}>
       <Link to={`/movie/${id}`} className={styles.link}>
-        <Img src={[path, "https://via.placeholder.com/500x750?text=Poster"]} />
+        <Img
+          src={[path, "https://via.placeholder.com/500x750?text=Poster"]}
+          alt={`Poster of ${title}`}
+        />
         <div className={styles.details}>
           <p className={styles.title}>{title}</p>
           <p className={styles.date}>{releaseDate}</p>

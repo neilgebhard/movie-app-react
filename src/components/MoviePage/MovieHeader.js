@@ -47,7 +47,7 @@ const MovieHeader = ({ movie }) => {
             <span>{`${runtimeHours}h ${runtimeMinutes}m`}</span>
           </p>
           <p className={styles.tagline}>{tagline}</p>
-          <h3 className={styles.overviewLabel}>Overview</h3>
+          <h2 className={styles.overviewLabel}>Overview</h2>
           <p className={styles.overview}>{overview}</p>
           <p className={styles.rating}>
             <StarIcon width={40} /> {vote_average}

@@ -22,10 +22,12 @@ const Cast = ({ movieId }) => {
   return (
     <>
       <h2>Cast</h2>
-      <section className={styles.grid}>
-        {cast.map((actor) => (
-          <Actor key={actor.id} actor={actor} />
-        ))}
+      <section>
+        <ul className={styles.grid}>
+          {cast.map((actor) => (
+            <Actor key={actor.id} actor={actor} />
+          ))}
+        </ul>
       </section>
     </>
   );

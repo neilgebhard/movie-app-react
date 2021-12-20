@@ -11,7 +11,10 @@ const Movie = ({ movie }) => {
   return (
     <Card>
       <Link to={`/movie/${id}`}>
-        <Img src={[path, "https://via.placeholder.com/500x750?text=Movie"]} />
+        <Img
+          src={[path, "https://via.placeholder.com/500x750?text=Movie"]}
+          alt={`Poster of ${title}`}
+        />
         <div className={styles.details}>
           <p className={styles.rating}>
             <StarIcon width={24} /> {vote_average.toFixed(1)}
