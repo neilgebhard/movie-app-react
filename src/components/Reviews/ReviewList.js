@@ -23,7 +23,7 @@ function Reviews({ movieId }) {
     <section>
       {reviews.length > 0 && (
         <>
-          <h3>Reviews</h3>
+          <h2>Reviews</h2>
           {reviews.map((review) => (
             <Review key={review.id} review={review} />
           ))}

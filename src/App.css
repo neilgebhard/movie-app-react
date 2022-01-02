@@ -1,20 +1,3 @@
-/* 
-
-- Tints:
-#eaf2f8
-#bfd9ea
-#5499c7
-
-- Accents:
-- Greys
-
-#888
-#767676 (lightest grey allowed on #fff)
-#6f6f6f (lightest grey allowed on #fdf2e9)
-#555
-#333
-*/
-
 :root {
   --text-color: #222;
   --text-color-dark: #0c2637;
@@ -75,7 +58,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 a:link,
@@ -90,12 +73,20 @@ a:active {
   color: var(--color-primary);
 }
 
-.mb-10 {
+.margin-bottom-lg {
   margin-bottom: 10rem;
+}
+
+.margin-bottom-md {
+  margin-bottom: 5rem;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 2.5rem;
 }
 
 @media (max-width: 44em) {
   html {
-    font-size: 50%%;
+    font-size: 50%;
   }
 }

@@ -16,6 +16,7 @@ const SearchResultItem = ({ movie }) => {
         <Img
           src={[path, "https://via.placeholder.com/500x750?text=Poster"]}
           alt={`Poster of ${title}`}
+          styles={styles.img}
         />
         <div className={styles.details}>
           <p className={styles.title}>{title}</p>
