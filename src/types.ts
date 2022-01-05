@@ -61,16 +61,32 @@ type Genre = {
   id: number;
   name: string;
 };
-export type ProductionCompanies = {
+type ProductionCompanies = {
   id: number;
   logo_path: string;
   name: string;
   origin_country: string;
 };
-export type ProductionCountries = {
+type ProductionCountries = {
   name: string;
 };
-export type SpokenLanguages = {
+type SpokenLanguages = {
   english_name: string;
   name: string;
+};
+
+export type Review = {
+  author: string;
+  author_details: AuthorDetails;
+  content: string;
+  created_at: string;
+  id: string;
+  updated_at: string;
+  url: string;
+};
+type AuthorDetails = {
+  name: string;
+  username: string;
+  avatar_path: string;
+  rating: number;
 };

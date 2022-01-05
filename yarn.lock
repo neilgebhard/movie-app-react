@@ -1889,6 +1889,13 @@
     "@types/history" "*"
     "@types/react" "*"
 
+"@types/react-show-more-text@^1.4.2":
+  "integrity" "sha512-CinPPhpxYFVKx4V0yqQGK0HUbHdlvLH8fQ/Ccp5XNKuQyIyc6bDMQz5b8bIBqmhMcCvn6AvSz3MmPpwNVCjmHQ=="
+  "resolved" "https://registry.npmjs.org/@types/react-show-more-text/-/react-show-more-text-1.4.2.tgz"
+  "version" "1.4.2"
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*", "@types/react@^17.0.38":
   "integrity" "sha512-SI92X1IA+FMnP3qM5m4QReluXzhcmovhZnLNm3pyeQlooi02qI7sLiepEYqT678uNiyc25XfCqxREFpy3W7YhQ=="
   "resolved" "https://registry.npmjs.org/@types/react/-/react-17.0.38.tgz"

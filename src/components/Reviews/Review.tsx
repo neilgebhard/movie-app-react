@@ -1,8 +1,8 @@
 import ShowMoreText from "react-show-more-text";
 import styles from "./Review.module.css";
+import type { Review as ReviewType } from "../../types";
 
-const Review = ({ review }) => {
-  const { content, created_at, author } = review;
+const Review = ({ content, created_at, author }: ReviewType) => {
   const date = new Date(created_at);
   const [month, day, year] = [
     date.getMonth(),

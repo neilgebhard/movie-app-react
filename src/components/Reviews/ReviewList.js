@@ -25,7 +25,7 @@ function Reviews({ movieId }) {
         <>
           <h2>Reviews</h2>
           {reviews.map((review) => (
-            <Review key={review.id} review={review} />
+            <Review key={review.id} {...review} />
           ))}
         </>
       )}
