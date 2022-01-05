@@ -28,8 +28,8 @@ const Home = () => {
   return (
     <main className={`container ${styles.main}`}>
       {movieLists.map((list, i) => (
-        <div className="margin-bottom-lg">
-          <MovieList title={list.title} endpoint={list.endpoint} key={i} />
+        <div className="margin-bottom-lg" key={i}>
+          <MovieList title={list.title} endpoint={list.endpoint} />
         </div>
       ))}
     </main>
