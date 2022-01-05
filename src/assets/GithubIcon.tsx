@@ -1,4 +1,8 @@
-const GithubIcon = (props: {}) => {
+type AppProps = {
+  height: number;
+};
+
+const GithubIcon = (props: AppProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

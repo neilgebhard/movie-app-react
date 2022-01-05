@@ -11,7 +11,7 @@ const Footer = () => {
         <p>
           The code is on{" "}
           <a href="https://github.com/neilgebhard/movie-app-react">
-            Github <GithubIcon height="20" />
+            Github <GithubIcon height={20} />
           </a>
           .
         </p>
