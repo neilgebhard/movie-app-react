@@ -23,7 +23,7 @@ const MovieList = ({ title, endpoint }) => {
   return (
     <Grid title={title}>
       {movies.map((movie) => (
-        <Movie key={movie.id} movie={movie} />
+        <Movie key={movie.id} {...movie} />
       ))}
     </Grid>
   );

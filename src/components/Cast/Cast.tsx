@@ -2,11 +2,16 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Actor from "./Actor";
 import styles from "./Cast.module.css";
+import type { Actor as ActorType } from "../../types";
 
 const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
 
-const Cast = ({ movieId }) => {
-  const [cast, setCast] = useState([]);
+type AppProps = {
+  movieId: string;
+};
+
+const Cast = ({ movieId }: AppProps) => {
+  const [cast, setCast] = useState<ActorType[]>([]);
 
   useEffect(() => {
     axios
@@ -25,7 +30,7 @@ const Cast = ({ movieId }) => {
       <section>
         <ul className={styles.grid}>
           {cast.map((actor) => (
-            <Actor key={actor.id} actor={actor} />
+            <Actor key={actor.id} {...actor} />
           ))}
         </ul>
       </section>
