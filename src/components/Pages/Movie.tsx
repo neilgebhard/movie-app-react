@@ -8,12 +8,13 @@ import Details from "../MoviePage/Details";
 import LoadingSpinner from "../UI/LoadingSpinner";
 import styles from "./Movie.module.css";
 import axios from "axios";
+import type { MovieDetails } from "../../types";
 
 const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
 
 const MoviePage = () => {
-  const { movieId } = useParams();
-  const [movie, setMovie] = useState({});
+  const { movieId } = useParams<{ movieId: string }>();
+  const [movie, setMovie] = useState<MovieDetails>({} as MovieDetails);
 
   useEffect(() => {
     axios
