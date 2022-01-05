@@ -37,7 +37,7 @@ describe("MovieHeader", () => {
 
     render(
       <BrowserRouter>
-        <MovieHeader movie={movie} />
+        <MovieHeader {...movie} />
       </BrowserRouter>
     );
 

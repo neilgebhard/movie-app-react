@@ -30,7 +30,7 @@ const MoviePage = () => {
 
   return (
     <>
-      <MovieHeader movie={movie} />
+      <MovieHeader {...movie} />
       <section className="container">
         <Cast movieId={movieId} />
         <MovieList
@@ -39,7 +39,7 @@ const MoviePage = () => {
         />
         <div className={styles.wrapper}>
           <ReviewList movieId={movieId} />
-          <Details movie={movie} />
+          <Details {...movie} />
         </div>
       </section>
     </>

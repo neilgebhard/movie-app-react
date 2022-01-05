@@ -1,16 +1,15 @@
 import styles from "./Details.module.css";
+import type { MovieDetails } from "../../types";
 
-const Details = ({ movie }) => {
-  const {
-    budget,
-    homepage,
-    original_language,
-    popularity,
-    revenue,
-    release_date,
-    status,
-  } = movie;
-
+const Details = ({
+  budget,
+  homepage,
+  original_language,
+  popularity,
+  revenue,
+  release_date,
+  status,
+}: MovieDetails) => {
   const formatter = new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",

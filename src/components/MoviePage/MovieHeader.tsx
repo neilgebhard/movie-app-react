@@ -2,21 +2,20 @@ import { getReleaseYear, getReleaseDate, getRuntimes } from "../util";
 import styles from "./MovieHeader.module.css";
 import StarIcon from "../../assets/StarIcon";
 import imdbImg from "../../assets/imdb.png";
+import type { MovieDetails } from "../../types";
 
-const MovieHeader = ({ movie }) => {
-  const {
-    backdrop_path,
-    genres,
-    imdb_id,
-    title,
-    overview,
-    poster_path,
-    release_date,
-    runtime,
-    tagline,
-    vote_average,
-  } = movie;
-
+const MovieHeader = ({
+  backdrop_path,
+  genres,
+  imdb_id,
+  title,
+  overview,
+  poster_path,
+  release_date,
+  runtime,
+  tagline,
+  vote_average,
+}: MovieDetails) => {
   const posterSrc = `https://image.tmdb.org/t/p/w500/${poster_path}`;
   const bgImageSrc = `https://image.tmdb.org/t/p/w500/${backdrop_path}`;
   const imdbUrl = `https://www.imdb.com/title/${imdb_id}`;

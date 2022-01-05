@@ -3,12 +3,13 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import SearchResultItem from "../Search/SearchResultItem";
 import styles from "./Search.module.css";
+import type { Movie } from "../../types";
 
 const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
 
 const SearchResults = () => {
-  const { searchText } = useParams();
-  const [movies, setMovies] = useState([]);
+  const { searchText } = useParams<{ searchText: string }>();
+  const [movies, setMovies] = useState<Movie[]>([]);
 
   useEffect(() => {
     axios
