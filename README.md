@@ -15,6 +15,7 @@ This repository holds the source code for a movie web app that can display lists
 Project is created with:
 
 - [The Movie Database API](https://developers.themoviedb.org/3/getting-started/introduction)
+- TypeScript: 4.5.4
 - React: 17.0.2
 - React Router: 5.2.0
 
