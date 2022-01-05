@@ -1,8 +1,13 @@
 import Card from "../UI/Card";
 import { Img } from "react-image";
 import styles from "./Actor.module.css";
+import type { Actor as ActorType } from "../../types";
 
-const Actor = ({ actor }) => {
+type AppProps = {
+  actor: ActorType;
+};
+
+const Actor = ({ actor }: AppProps) => {
   const { character, name, profile_path } = actor;
   const path = `https://image.tmdb.org/t/p/w500/${profile_path}`;
   return (
