@@ -2,10 +2,16 @@ import { Link } from "react-router-dom";
 import { Img } from "react-image";
 import styles from "./SearchResultItem.module.css";
 import StarIcon from "../../assets/StarIcon";
+import type { Movie } from "../../types";
 
-const SearchResultItem = ({ movie }) => {
-  const { id, overview, poster_path, release_date, title, vote_average } =
-    movie;
+const SearchResultItem = ({
+  id,
+  overview,
+  poster_path,
+  release_date,
+  title,
+  vote_average,
+}: Movie) => {
   const path = `https://image.tmdb.org/t/p/w500/${poster_path}`;
   const date = new Date(release_date);
   const releaseDate = `${date.getMonth()}/${date.getDate()}/${date.getFullYear()}`;
@@ -16,7 +22,7 @@ const SearchResultItem = ({ movie }) => {
         <Img
           src={[path, "https://via.placeholder.com/500x750?text=Poster"]}
           alt={`Poster of ${title}`}
-          styles={styles.img}
+          className={styles.img}
         />
         <div className={styles.details}>
           <p className={styles.title}>{title}</p>

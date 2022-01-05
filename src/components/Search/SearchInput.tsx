@@ -2,15 +2,15 @@ import { useRef } from "react";
 import { useHistory } from "react-router";
 import styles from "./SearchInput.module.css";
 
-const SearchInput = (props) => {
-  const inputEl = useRef();
+const SearchInput = () => {
+  const inputRef = useRef<HTMLInputElement>(null!);
   let history = useHistory();
 
-  const onSubmitHandler = (e) => {
+  const onSubmitHandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const searchText = inputEl.current.value;
+    const searchText = inputRef.current.value;
     history.push(`/search/${searchText}`);
-    inputEl.current.value = "";
+    inputRef.current.value = "";
   };
 
   return (
@@ -20,7 +20,7 @@ const SearchInput = (props) => {
           type="text"
           className={styles.searchInput}
           placeholder="Search for a movie"
-          ref={inputEl}
+          ref={inputRef}
         />
         <button className={styles.searchButton} aria-label="Search">
           <svg

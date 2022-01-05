@@ -33,7 +33,7 @@ const SearchResults = () => {
     <section className={styles.section}>
       <ul className={styles.ul}>
         {movies.map((movie) => (
-          <SearchResultItem movie={movie} key={movie.id} />
+          <SearchResultItem key={movie.id} {...movie} />
         ))}
       </ul>
     </section>

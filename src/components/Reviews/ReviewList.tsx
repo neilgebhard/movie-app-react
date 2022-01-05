@@ -1,11 +1,16 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Review from "./Review";
+import type { Review as ReviewType } from "../../types";
 
 const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
 
-function Reviews({ movieId }) {
-  const [reviews, setReviews] = useState([]);
+type AppProps = {
+  movieId: string;
+};
+
+function Reviews({ movieId }: AppProps) {
+  const [reviews, setReviews] = useState<ReviewType[]>([]);
 
   useEffect(() => {
     axios
