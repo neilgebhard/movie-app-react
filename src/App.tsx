@@ -1,13 +1,13 @@
-import React, { Suspense } from "react";
+import { Suspense } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import ScrollToTop from "./components/util/ScrollToTop";
 import Header from "./components/Layout/Header";
 import Footer from "./components/Layout/Footer";
 import LoadingSpinner from "./components/UI/LoadingSpinner";
-import "./App.css";
 import HomePage from "./components/Pages/Home";
 import MoviePage from "./components/Pages/Movie";
 import SearchResults from "./components/Pages/Search";
+import "./App.css";
 
 function App() {
   return (

@@ -1,4 +1,4 @@
-export const getReleaseDate = (releaseDate) => {
+export const getReleaseDate = (releaseDate: string) => {
   const date = new Date(releaseDate);
   const day = date.getDate();
   const month = date.getMonth();
@@ -6,12 +6,12 @@ export const getReleaseDate = (releaseDate) => {
   return `${month}/${day}/${year}`;
 };
 
-export const getReleaseYear = (releaseDate) => {
+export const getReleaseYear = (releaseDate: string) => {
   const date = new Date(releaseDate);
   return date.getFullYear();
 };
 
-export const getRuntimes = (runtime) => {
+export const getRuntimes = (runtime: number) => {
   const hours = Math.floor(runtime / 60);
   const minutes = Math.floor(runtime % 60);
   return [hours, minutes];

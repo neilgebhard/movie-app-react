@@ -1,6 +1,11 @@
 import styles from "./Grid.module.css";
 
-const Grid = ({ title, children }) => {
+type AppProps = {
+  children: React.ReactNode;
+  title: string;
+};
+
+const Grid = ({ title, children }: AppProps) => {
   return (
     <>
       <h2>{title}</h2>
