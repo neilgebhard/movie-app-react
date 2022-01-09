@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import SearchInput from "./SearchInput";
+import SearchInput from "../components/Search/SearchInput";
 
 describe("SearchInput", () => {
   test("renders SearchInput component", () => {

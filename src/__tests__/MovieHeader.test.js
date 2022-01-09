@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
-import MovieHeader from "./MovieHeader";
+import MovieHeader from "../components/MoviePage/MovieHeader";
 
 describe("MovieHeader", () => {
   test("renders MovieHeader component", async () => {

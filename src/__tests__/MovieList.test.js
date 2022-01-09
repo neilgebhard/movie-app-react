@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import axios from "axios";
-import MovieList from "./MovieList";
+import MovieList from "../components/Common/MovieList";
 
 jest.mock("axios");
 
