@@ -1,9 +1,9 @@
-.section {
+.main {
   max-width: 80rem;
   margin: 5rem auto 0;
 }
 
-.ul {
+.searchList {
   list-style: none;
   display: flex;
   flex-direction: column;

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Review from "./Review";
 import type { Review as ReviewType } from "../../types";
+import styles from "./Review.module.css";
 
 const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
 
@@ -25,15 +26,16 @@ function Reviews({ movieId }: AppProps) {
   }, [movieId]);
 
   return (
-    <section>
-      {reviews.length > 0 && (
-        <>
-          <h2>Reviews</h2>
-          {reviews.map((review) => (
-            <Review key={review.id} {...review} />
-          ))}
-        </>
+    <section style={{ flexGrow: 1 }}>
+      <h2>Reviews</h2>
+      {reviews.length === 0 && (
+        <div className={styles.review}>
+          There are currently no reviews for this movie.
+        </div>
       )}
+      {reviews.map((review) => (
+        <Review key={review.id} {...review} />
+      ))}
     </section>
   );
 }

@@ -25,7 +25,7 @@ const Cast = ({ movieId }: AppProps) => {
   }, [movieId]);
 
   return (
-    <section className="container">
+    <section className={`container ${styles.castSection}`}>
       <h2>Cast</h2>
       <ul className={styles.grid}>
         {cast.map((actor) => (

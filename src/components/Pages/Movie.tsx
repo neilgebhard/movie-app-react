@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import MovieHeader from "../MoviePage/MovieHeader";
+import MovieHeader from "../Movie/MovieHeader";
 import Cast from "../Cast/Cast";
-import MovieList from "../Common/MovieList";
+import SimilarMovies from "../Movie/SimilarMovies";
 import ReviewList from "../Reviews/ReviewList";
-import Details from "../MoviePage/Details";
+import Details from "../Movie/Details";
 import LoadingSpinner from "../UI/LoadingSpinner";
 import styles from "./Movie.module.css";
 import axios from "axios";
@@ -30,20 +30,15 @@ const MoviePage = () => {
   if (Object.keys(movie).length === 0) return <LoadingSpinner />;
 
   return (
-    <>
-      <main>
-        <MovieHeader {...movie} />
-        <Cast movieId={movieId} />
-        <MovieList
-          endpoint={`https://api.themoviedb.org/3/movie/${movieId}/similar`}
-          title="Similar Movies"
-        />
-        <div className={styles.wrapper}>
-          <ReviewList movieId={movieId} />
-          <Details {...movie} />
-        </div>
-      </main>
-    </>
+    <main>
+      <MovieHeader {...movie} />
+      <Cast movieId={movieId} />
+      <SimilarMovies movieId={movieId} />
+      <div className={`container ${styles.wrapper}`}>
+        <ReviewList movieId={movieId} />
+        <Details {...movie} />
+      </div>
+    </main>
   );
 };
 

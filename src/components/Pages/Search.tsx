@@ -26,12 +26,13 @@ const SearchResults = () => {
   }, [searchText]);
 
   if (!movies) {
-    return <h1>No results found.</h1>;
+    return <div>No results found.</div>;
   }
 
   return (
-    <main className={styles.section}>
-      <ul className={styles.ul}>
+    <main className={styles.main}>
+      <h1>Movie Search</h1>
+      <ul className={styles.searchList}>
         {movies.map((movie) => (
           <SearchResultItem key={movie.id} {...movie} />
         ))}

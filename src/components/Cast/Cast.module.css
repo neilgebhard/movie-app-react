@@ -5,6 +5,10 @@
   list-style: none;
 }
 
+.castSection {
+  margin-bottom: 30px;
+}
+
 @media (max-width: 1024px) {
   .grid {
     grid-template-columns: repeat(8, 1fr);
