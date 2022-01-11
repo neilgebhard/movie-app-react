@@ -30,13 +30,13 @@ const SearchResults = () => {
   }
 
   return (
-    <section className={styles.section}>
+    <main className={styles.section}>
       <ul className={styles.ul}>
         {movies.map((movie) => (
           <SearchResultItem key={movie.id} {...movie} />
         ))}
       </ul>
-    </section>
+    </main>
   );
 };
 

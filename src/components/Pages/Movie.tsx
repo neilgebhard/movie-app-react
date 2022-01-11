@@ -31,8 +31,8 @@ const MoviePage = () => {
 
   return (
     <>
-      <MovieHeader {...movie} />
-      <section className="container">
+      <main>
+        <MovieHeader {...movie} />
         <Cast movieId={movieId} />
         <MovieList
           endpoint={`https://api.themoviedb.org/3/movie/${movieId}/similar`}
@@ -42,7 +42,7 @@ const MoviePage = () => {
           <ReviewList movieId={movieId} />
           <Details {...movie} />
         </div>
-      </section>
+      </main>
     </>
   );
 };

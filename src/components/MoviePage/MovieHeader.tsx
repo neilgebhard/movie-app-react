@@ -25,7 +25,7 @@ const MovieHeader = ({
   const [runtimeHours, runtimeMinutes] = getRuntimes(runtime);
 
   return (
-    <div
+    <section
       className={styles.hero}
       style={{
         backgroundImage: `linear-gradient(rgba(34, 34, 34, 0.93), rgba(34, 34, 34, 0.93)), url(${bgImageSrc})`,
@@ -56,7 +56,7 @@ const MovieHeader = ({
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

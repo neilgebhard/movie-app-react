@@ -9,6 +9,9 @@ const SearchInput = () => {
   const onSubmitHandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const searchText = inputRef.current.value;
+
+    if (searchText.trim().length === 0) return;
+
     history.push(`/search/${searchText}`);
     inputRef.current.value = "";
   };
@@ -17,7 +20,7 @@ const SearchInput = () => {
     <form className={styles.form} onSubmit={onSubmitHandler}>
       <div className={styles.searchBox}>
         <input
-          type="text"
+          type="search"
           className={styles.searchInput}
           placeholder="Search for a movie"
           ref={inputRef}

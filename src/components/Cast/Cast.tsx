@@ -25,16 +25,14 @@ const Cast = ({ movieId }: AppProps) => {
   }, [movieId]);
 
   return (
-    <>
+    <section className="container">
       <h2>Cast</h2>
-      <section>
-        <ul className={styles.grid}>
-          {cast.map((actor) => (
-            <Actor key={actor.id} {...actor} />
-          ))}
-        </ul>
-      </section>
-    </>
+      <ul className={styles.grid}>
+        {cast.map((actor) => (
+          <Actor key={actor.id} {...actor} />
+        ))}
+      </ul>
+    </section>
   );
 };
 export default Cast;

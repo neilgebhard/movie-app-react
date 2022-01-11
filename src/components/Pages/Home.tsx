@@ -6,22 +6,22 @@ const movieLists = [
     title: "Popular",
     endpoint: "https://api.themoviedb.org/3/movie/popular",
   },
-  {
-    title: "Trending",
-    endpoint: "https://api.themoviedb.org/3/trending/movie/week",
-  },
-  {
-    title: "Now Playing",
-    endpoint: "https://api.themoviedb.org/3/movie/now_playing",
-  },
-  {
-    title: "Upcoming",
-    endpoint: "https://api.themoviedb.org/3/movie/upcoming",
-  },
-  {
-    title: "Top Rated",
-    endpoint: "https://api.themoviedb.org/3/movie/popular",
-  },
+  // {
+  //   title: "Trending",
+  //   endpoint: "https://api.themoviedb.org/3/trending/movie/week",
+  // },
+  // {
+  //   title: "Now Playing",
+  //   endpoint: "https://api.themoviedb.org/3/movie/now_playing",
+  // },
+  // {
+  //   title: "Upcoming",
+  //   endpoint: "https://api.themoviedb.org/3/movie/upcoming",
+  // },
+  // {
+  //   title: "Top Rated",
+  //   endpoint: "https://api.themoviedb.org/3/movie/popular",
+  // },
 ];
 
 const Home = () => {
