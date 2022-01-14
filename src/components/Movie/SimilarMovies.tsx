@@ -6,11 +6,11 @@ import type { Movie as MovieType } from "../../types";
 
 const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
 
-type AppProps = {
+type Props = {
   movieId: string;
 };
 
-const SimilarMovies = ({ movieId }: AppProps) => {
+const SimilarMovies = ({ movieId }: Props) => {
   const [movies, setMovies] = useState<MovieType[]>([]);
 
   useEffect(() => {

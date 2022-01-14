@@ -1,8 +1,8 @@
-type AppProps = {
+type Props = {
   width: number;
 };
 
-const StarIcon = (props: AppProps) => {
+const StarIcon = (props: Props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

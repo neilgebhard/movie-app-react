@@ -8,12 +8,12 @@ import LoadingSpinner from "../UI/LoadingSpinner";
 
 const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
 
-type AppProps = {
+type Props = {
   title: string;
   endpoint: string;
 };
 
-const MovieList = ({ title, endpoint }: AppProps) => {
+const MovieList = ({ title, endpoint }: Props) => {
   const [movies, setMovies] = useState<MovieType[]>([]);
   const page = useRef(0);
 

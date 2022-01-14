@@ -6,11 +6,11 @@ import type { Actor as ActorType } from "../../types";
 
 const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
 
-type AppProps = {
+type Props = {
   movieId: string;
 };
 
-const Cast = ({ movieId }: AppProps) => {
+const Cast = ({ movieId }: Props) => {
   const [cast, setCast] = useState<ActorType[]>([]);
 
   useEffect(() => {

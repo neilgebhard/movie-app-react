@@ -1,10 +1,10 @@
 import styles from "./Card.module.css";
 
-type AppProps = {
+type Props = {
   children: React.ReactNode;
 };
 
-const Card = ({ children }: AppProps) => {
+const Card = ({ children }: Props) => {
   return <li className={styles.card}>{children}</li>;
 };
 

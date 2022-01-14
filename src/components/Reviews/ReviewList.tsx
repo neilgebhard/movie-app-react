@@ -6,11 +6,11 @@ import styles from "./Review.module.css";
 
 const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
 
-type AppProps = {
+type Props = {
   movieId: string;
 };
 
-function Reviews({ movieId }: AppProps) {
+function Reviews({ movieId }: Props) {
   const [reviews, setReviews] = useState<ReviewType[]>([]);
 
   useEffect(() => {
