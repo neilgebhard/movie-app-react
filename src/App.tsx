@@ -6,7 +6,9 @@ import LoadingSpinner from "./components/UI/LoadingSpinner";
 import HomePage from "./components/Pages/Home";
 import MoviePage from "./components/Pages/Movie";
 import SearchResults from "./components/Pages/Search";
+import Footer from "./components/Layout/Footer";
 import "./App.css";
+import "react-multi-carousel/lib/styles.css";
 
 function App() {
   return (
@@ -25,6 +27,7 @@ function App() {
             <HomePage />
           </Route>
         </Switch>
+        <Footer />
       </Suspense>
     </BrowserRouter>
   );

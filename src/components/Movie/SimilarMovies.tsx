@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Movie from "../Common/MovieItem";
+import Movie from "../Movie/MovieItem";
 import Grid from "../UI/Grid";
 import axios from "axios";
 import type { Movie as MovieType } from "../../types";

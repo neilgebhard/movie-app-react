@@ -6,13 +6,10 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className="container">
         <p data-testid="made-by">
-          Made by <strong>Neil Gebhard</strong>.
-        </p>
-        <p>
-          The code is on{" "}
+          © Neil Gebhard. The code is on{" "}
           <a href="https://github.com/neilgebhard/movie-app-react">
-            Github <GithubIcon height={20} />
-          </a>
+            Github <GithubIcon height={15} />
+          </a>{" "}
           .
         </p>
       </div>
